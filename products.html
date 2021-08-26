@@ -1,46 +1,245 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>arraytrix</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
-        <link rel="stylesheet" type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    </head>
-<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arraytrix</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color:#1A1818;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+}
 
-<button class="collapsible ml-15 white bg-black hover-bg-red opacity-70 w-100pc fs-l2 text-left">Open Section 1</button>
-<div class="content h-0 pb-0">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button class="collapsible">Open Section 2</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button class="collapsible">Open Section 3</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+.active, .collapsible:hover {
+  background-color:#E7393F;
+}
+
+.collapsible:after {
+  content: '\002B';
+  content: '\2304';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\002B';
+  content: '\2303';
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body class="bg-black muli">
+
+  <!--nav bar-->
+  <nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
+    <div class="flex justify-between">
+        <a href="#" class="flex items-center p-2 mr-4 no-underline">
+            <a style="color:#FF0909;font-family:'Courier New';font-size: 75px;">[</a><a style="color:#F3F1F1;font-family:'Courier New';font-size: 75px;">array</a><a style="color:#FF0909;font-family:'Courier New';font-size: 75px;">trix]</a>
+        </a>
+        <a data-toggle="toggle-nav" data-target="#nav-items" href="#"
+            class="flex items-center ml-auto md-hidden red-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
+            <i data-feather="menu"></i>
+        </a>
+    </div>
+    <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
+        <a href="index.html#home" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Home</a>
+        <a href="#features" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Features</a>
+        <a href="#pricing" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Pricing</a>
+        <a href="#blog" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Blog</a>
+        <a href="#" class="button bg-white black fw-600 no-underline mx-5">Register</a>
+    </div>
+  </nav>
+
+    <!-- hero section -->
+  <section id="features" class="min-h-100vh flex justify-start items-center">
+      <div class="mx-5 md-mx-l5">
+          <div>
+              <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 ">Our Services, <br />tailored to <br/>your needs.</h1>
+          </div>
+      </div>
+      <div class='mx-auto'>
+          <a style="color:#FF0909;font-family:'Courier New';font-size: 250px;">[</a><a style="color:#F3F1F1;font-family:'Courier New';font-size: 250px;">a</a><a style="color:#FF0909;font-family:'Courier New';font-size: 250px;">t]</a>
+      </div>
+  </section>
+
+  <!--product menu list-->
+  <section>
+    <button class="mx-auto w-90pc collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center">
+      <div class="flex justify-center items-center bg-red-lightest-10 white w-l5 h-l5 br-round mb-5">
+        <i data-feather="cpu" class="w-l5 h-l2"></i>
+      </div>
+      <h4>Machine Learning</h4>
+    </button>
+    <div id="machine_learning" class="mx-auto w-90pc content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div class=""><img class="br-round" src="assets/images/altynex.jpg" alt=""></div>
+    </div>
+    <button class="mx-auto w-90pc collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center mt-2">
+      <div class="flex justify-center items-center bg-red-lightest-10 white w-l5 h-l5 br-round mb-5">
+        <i data-feather="trending-up" class="w-l5 h-l2"></i>
+      </div>
+      <h4>Model Building</h4>
+    </button>
+    <div class="mx-auto w-90pc content ">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="mx-auto w-90pc collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center mt-2">
+      <div class="flex justify-center items-center bg-red-lightest-10 white w-l5 h-l5 br-round mb-5">
+        <i data-feather="bar-chart" class="w-l5 h-l2"></i>
+      </div>
+      <h4>Data Visualisation</h4>
+    </button>
+    <div class="mx-auto w-90pc content ">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="mx-auto w-90pc collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center mt-2">    
+      <div class="flex justify-center items-center bg-red-lightest-10 white w-l5 h-l5 br-round mb-5">
+        <i data-feather="terminal" class="w-l5 h-l2"></i>
+      </div>
+      <h4>Python Integration</h4>
+    </button>
+    <div class="mx-auto w-90pc content ">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="mx-auto w-90pc collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center mt-2">    
+      <div class="flex justify-center items-center bg-red-lightest-10 white w-l5 h-l5 br-round mb-5">
+        <i data-feather="database" class="w-l5 h-l2"></i>
+      </div>
+      <h4>SAP & Excel Databasing</h4>
+    </button>
+      <div class="mx-auto w-90pc content ">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="mx-auto w-90pc collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center mt-2">
+      <div class="flex justify-center items-center bg-red-lightest-10 white w-l5 h-l5 br-round mb-5">
+        <i data-feather="tool" class="w-l5 h-l2"></i>
+      </div>
+      <h4>Software Engineering</h4>
+    </button>
+    <div class="mx-auto w-90pc content ">
+      <p id="software_engineering">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </section>
+  
+  <!--footer-->
+  <footer class="p-5 md-p-l5 bg-red-lightest-10 mt-5">
+    <div class="flex flex-wrap">
+        <div class="md-w-25pc mb-10">
+            <a style="color:#FF0909;font-family:'Courier New';font-size: 60px;">[</a><a style="color:#F3F1F1;font-family:'Courier New';font-size: 60px;">array</a><a style="color:#FF0909;font-family:'Courier New';font-size: 60px;">trix]</a>
+            <div class="white opacity-70 fs-s2 mt-4 md-pr-10">
+                <p>Soluta voluptate et optio. Eos quasi impedit sapiente aliquid eius eligendi at. Necessitatibus
+                    magni et sed quod quas minima.</p>
+                <br>
+                <p>Soluta voluptate et optio. Eos quasi impedit sapiente aliquid eius eligendi at. Necessitatibus
+                    magni et sed quod quas minima.</p>
+            </div>
+        </div>
+        <div class="w-100pc md-w-50pc">
+            <div class="flex justify-around">
+                <div class="w-33pc md-px-10 mb-10">
+                    <h5 class="white">Company</h5>
+                    <ul class="list-none mt-5 fs-s2">
+                        <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">About
+                                Us</a></li>
+                        <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Jobs</a>
+                        </li>
+                        <li class="my-3"><a href="#"
+                                class="white opacity-70 no-underline hover-underline">Contact</a></li>
+                        <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Media</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-33pc md-px-10 mb-10">
+                    <h5 class="white">Product</h5>
+                    <ul class="list-none mt-5 fs-s2">
+                        <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">About
+                                Us</a></li>
+                        <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Jobs</a>
+                        </li>
+                        <li class="my-3"><a href="#"
+                                class="white opacity-70 no-underline hover-underline">Contact</a></li>
+                        <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Media</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-33pc md-px-10 mb-10">
+                    <h5 class="white">Support</h5>
+                    <ul class="list-none mt-5 fs-s2">
+                        <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">About
+                                Us</a></li>
+                        <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Jobs</a>
+                        </li>
+                        <li class="my-3"><a href="#"
+                                class="white opacity-70 no-underline hover-underline">Contact</a></li>
+                        <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Media</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="w-100pc md-w-25pc">
+            <div class="flex w-75pc md-w-100pc mx-auto">
+                <input type="text"
+                    class="input flex-grow-1 bw-0 fw-200 bg-red-lightest-10 white ph-red-lightest focus-white opacity-80 fs-s3 py-5 br-r-0"
+                    placeholder="Email Address">
+                <button class="button bg-red red-lightest fw-300 fs-s3 br-l-0">Start</button>
+            </div>
+            <div class="flex justify-around my-8">
+                <a href="#" class="relative p-5 bg-red br-round white hover-scale-up-1 ease-400"><i
+                        data-feather="twitter" class="absolute-center h-4"></i></a>
+                <a href="#" class="relative p-5 bg-red br-round white hover-scale-up-1 ease-400"><i
+                        data-feather="facebook" class="absolute-center h-4"></i></a>
+                <a href="#" class="relative p-5 bg-red br-round white hover-scale-up-1 ease-400"><i
+                        data-feather="instagram" class="absolute-center h-4"></i></a>
+            </div>
+        </div>
+    </div>
+  </footer>
 
 <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
 </script>
-
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
