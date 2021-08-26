@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arraytrix</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color:#1A1818;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+}
+
+.active, .collapsible:hover {
+  background-color:#E7393F;
+}
+
+.collapsible:after {
+  content: '\002B';
+  content: '\2304';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\002B';
+  content: '\2303';
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body class="bg-black muli">
+  <nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
+    <div class="flex justify-between">
+        <a href="#" class="flex items-center p-2 mr-4 no-underline">
+            <a style="color:#FF0909;font-family:'Courier New';font-size: 75px;">[</a><a style="color:#F3F1F1;font-family:'Courier New';font-size: 75px;">array</a><a style="color:#FF0909;font-family:'Courier New';font-size: 75px;">trix]</a>
+        </a>
+        <a data-toggle="toggle-nav" data-target="#nav-items" href="#"
+            class="flex items-center ml-auto md-hidden red-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
+            <i data-feather="menu"></i>
+        </a>
+    </div>
+    <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
+        <a href="#home" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Home</a>
+        <a href="#features" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Features</a>
+        <a href="#pricing" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Pricing</a>
+        <a href="#blog" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Blog</a>
+        <a href="#" class="button bg-white black fw-600 no-underline mx-5">Register</a>
+    </div>
+  </nav>
+  <button class="collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center">
+    <div class="flex justify-center items-center bg-red-lightest-10 white w-l5 h-l5 br-round mb-5">
+      <img data-feather="cpu" class="w-l5 h-l5 br-round" >
+    </div><h4>Machine Learning</h4>
+  </button>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class=""><img class="br-round" src="assets/images/altynex.jpg" alt=""></div>
+  </div>
+  <button class="collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center">Model Building</button>
+  <div class="content ">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <button class="collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center">Data Visualisation</button>
+  <div class="content ">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <button class="collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center">Python Integration</button>
+  <div class="content ">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <button class="collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center">SAP & Excel Databasing</button>
+  <div class="content ">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <button class="collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center">Software Engineering</button>
+  <div class="content ">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+</script>
+</body>
+</html>
