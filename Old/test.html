@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>arraytrix</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
+        <link rel="stylesheet" type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+        <style>.slick-arrow {
+            display: none !important; /* `arrows: false;` is not enough to prevent horizontal scrolling */
+          }
+          .slick-slide {
+            background: #c69;
+            border: 2px solid #fff;
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            outline: none; /* revent the appearance of a tiny gray contour */
+            padding: 18px 0;
+            text-align: center;
+          }
+          .slider:nth-of-type(n+3) .slick-slide { background: #9c6; }
+          .slider:nth-of-type(n+5) .slick-slide { background: #69c; }
+          .slider-nav {
+            margin-bottom: 12px;
+          }
+          .slider-nav .slick-current,
+          .slider-nav .slick-slide:hover {
+            cursor: pointer;
+            opacity: .7;
+          }</style>
+    </head>
+
+
+    <body>
+
+        <section class="relative bg-red-lightest-10">
+            <div id="slider-1">
+                <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+                    <h2 class="white fs-l3 fw-900">Lorem ipsum dolor sit amet, consectetur</h2>
+                    <p class="red-lightest fw-600 fs-m1 opacity-30 my-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor </p>
+                    <a href="#" class="button-md bg-red white fs-s3 br-4 black fw-600 no-underline m-5">BUY NOW</a>
+                </div>
+                <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+                    <h2 class="white fs-l3 fw-900">Lorem ipsum dolor sit amet, consectetur</h2>
+                    <p class="red-lightest fw-600 fs-m1 opacity-30 my-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor </p>
+                    <a href="#" class="button-md bg-red white fs-s3 br-4 black fw-600 no-underline m-5">BUY NOW</a>
+                </div>
+                <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+                    <h2 class="white fs-l3 fw-900">Lorem ipsum dolor sit amet, consectetur</h2>
+                    <p class="red-lightest fw-600 fs-m1 opacity-30 my-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor </p>
+                    <a href="#" class="button-md bg-red white fs-s3 br-4 black fw-600 no-underline m-5">BUY NOW</a>
+                </div>
+            </div>
+            <ul class="absolute list-none w-100pc flex justify-between top-50pc">
+                <li><button
+                        class="prev ml-10 br-round border-red-lightest red-lightest  bg-transparent flex justify-center items-center p-2 focus-red-lighter outline-none"><i
+                            data-feather="chevron-left"></i></button></li>
+                <li><button
+                        class="next mr-10 br-round border-red-lightest red-lightest  bg-transparent flex justify-center items-center p-2  focus-red-lighter outline-none"><i
+                            data-feather="chevron-right"></i></button></li>
+            </ul>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://unpkg.com/feather-icons"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+            <script src="assets/js/script.js"></script>
+        </section>
+
+
+        
+
+
+    </body>
+
+</html>

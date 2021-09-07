@@ -13,41 +13,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.collapsible {
-  background-color:#1A1818;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 25px;
-}
-
-.active, .collapsible:hover {
-  background-color:#E7393F;
-}
-
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: '\2212';
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
 </style>
 </head>
 <body class="bg-black muli">
@@ -64,19 +29,19 @@
         </a>
     </div>
     <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
-      <a href="/index.html#home" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Home</a>
-      <a href="#home" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Products</a>
-      <a href="/projects.html#home" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Projects</a>
-      <a href="/team.html#home" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Team</a>
-      <a href="#" class="button bg-white black fw-600 no-underline mx-5">Register</a>
-  </div>
+        <a href="/index.html#home" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Home</a>
+        <a href="/products.html#home" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Products</a>
+        <a href="#home" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Projects</a>
+        <a href="/team.html#home" class="fs-s1 mx-3 py-3 red no-underline hover-underline">Team</a>
+        <a href="#" class="button bg-white black fw-600 no-underline mx-5">Register</a>
+      </div>
   </nav>
 
     <!-- hero section -->
     <section id="home" class="min-h-100vh flex justify-between items-center w-90pc">
       <div class="mx-5 md-mx-l5">
           <div class='w-100pc'>
-              <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900">Our Products, <br />tailored to <br/>your needs.</h1>
+              <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900">Projects <br />filler. <br/></h1>
           </div>
       </div>
       <div class=''>
@@ -86,86 +51,6 @@
 
   <!--product menu list-->
   <section>
-
-    <button id="machine_learning" class="mx-auto w-90pc collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center">
-      <div class="flex justify-center items-center bg-red-lightest-10 white w-l5 h-l5 br-round mb-5">
-        <i data-feather="cpu" class="w-l5 h-l2"></i>
-      </div>
-      <h4>Machine Learning</h4>
-    </button>
-    <div class="mx-auto w-90pc content flex">
-      <p class='flex'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <div class="justify-end"><img class="br-round" src="assets/images/altynex.jpg" alt=""></div>
-    </div>
-
-    <button id="model_building"class="mx-auto w-90pc collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center mt-2">
-      <div class="flex justify-center items-center bg-red-lightest-10 white w-l5 h-l5 br-round mb-5">
-        <i data-feather="trending-up" class="w-l5 h-l2"></i>
-      </div>
-      <h4>Model Building</h4>
-    </button>
-    <div class="mx-auto w-90pc content flex br-8" style="background-color:#2D2A2E;">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <div>
-        <div class="mx-auto" style="margin-top:1%"><img class="br-8" src="assets/images/plot_hist.png" alt=""></div>
-        <div class="mx-auto"><img class="br-8" src="assets/images/corner.png" alt=""></div>
-      </div>
-    </div>
-
-    <button id="data_visualisation" class="mx-auto w-90pc collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center mt-2">
-      <div class="flex justify-center items-center bg-red-lightest-10 white w-l5 h-l5 br-round mb-5">
-        <i data-feather="bar-chart" class="w-l5 h-l2"></i>
-      </div>
-      <h4>Data Visualisation</h4>
-    </button>
-    <div class="mx-auto w-90pc content flex br-8" style="background-color:#2D2A2E;">
-      <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <div>
-        <div class="mx-auto" style="margin-top:1%"><img class="br-8" src="assets/images/HR.png" alt=""></div>
-        <div class="mx-auto"><img class="br-8" src="assets/images/planet_MR.png" alt=""></div>
-      </div>
-    </div>
-
-    <button id="python_integration" class="mx-auto w-90pc collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center mt-2">    
-      <div class="flex justify-center items-center bg-red-lightest-10 white w-l5 h-l5 br-round mb-5">
-        <i data-feather="terminal" class="w-l5 h-l2"></i>
-      </div>
-      <h4>Python Integration</h4>
-    </button>
-    <div class="mx-auto w-90pc content flex br-8" style="background-color:#2D2A2E;">
-      <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <div>
-        <div class="mx-auto"><img class="br-8" src="assets/images/HR.png" alt=""></div>
-        <div class="mx-auto"><img class="br-8" src="assets/images/planet_MR.png" alt=""></div>
-      </div>
-    </div>
-
-    <button id="databasing" class="mx-auto w-90pc collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center mt-2">    
-      <div class="flex justify-center items-center bg-red-lightest-10 white w-l5 h-l5 br-round mb-5">
-        <i data-feather="database" class="w-l5 h-l2"></i>
-      </div>
-      <h4>SAP & Excel Databasing</h4>
-    </button>
-    <div class="mx-auto w-90pc content flex br-8" style="background-color:#2D2A2E;">
-      <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <div>
-        <div class="mx-auto"><img class="br-8" src="assets/images/HR.png" alt=""></div>
-        <div class="mx-auto"><img class="br-8" src="assets/images/planet_MR.png" alt=""></div>
-      </div>
-    </div>
-
-    <button id="software_engineering" class="mx-auto w-90pc collapsible br-8 p-5 md-p-l2 flex flex-wrap md-justify-between md-items-center mt-2">
-      <div class="flex justify-center items-center bg-red-lightest-10 white w-l5 h-l5 br-round mb-5">
-        <i data-feather="tool" class="w-l5 h-l2"></i>
-      </div>
-      <h4>Software Engineering</h4>
-    </button>
-    <div class="mx-auto w-90pc content flex br-8" style="background-color:#2D2A2E;">
-      <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <div>
-        <div class="mx-auto" style="padding-top:1%"><img class="br-8" src="/assets/images/horseshoe.gif" alt=""></div>
-      </div>
-    </div>
 
   </section>
   
@@ -244,23 +129,6 @@
     </div>
   </footer>
 
-<script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      } 
-    });
-  }
-</script>
-<script></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://unpkg.com/feather-icons"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
